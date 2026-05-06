@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@source not "../../.claude";
+@source not "../../README.md";
+
+@theme {
+  /* Brand */
+  --color-brand-blue: #155dfc;
+  --color-brand-purple: #9810fa;
+
+  /* Surfaces */
+  --color-app-from: #f9fafb;
+  --color-app-to: #f3f4f6;
+  --color-footer: #101828;
+  --color-badge: #eceef2;
+
+  /* Text */
+  --color-foreground: #0a0a0a;
+  --color-text-strong: #1e2939;
+  --color-text-body: #364153;
+  --color-text-secondary: #4a5565;
+  --color-text-muted: #6a7282;
+  --color-text-footer: #99a1af;
+
+  /* UI */
+  --color-primary: #030213;
+  --color-border-soft: rgba(0, 0, 0, 0.1);
+  --color-track: rgba(3, 2, 19, 0.2);
+  --color-skill-track: #e5e7eb;
+
+  /* Typography scale */
+  --text-display-2xl: 72px;
+  --text-display-2xl--line-height: 1;
+  --text-3xl: 36px;
+  --text-3xl--line-height: 40px;
+  --text-2xl: 24px;
+  --text-2xl--line-height: 32px;
+  --text-xl: 20px;
+  --text-xl--line-height: 28px;
+  --text-lg: 18px;
+  --text-lg--line-height: 1.625;
+  --text-base: 16px;
+  --text-base--line-height: 24px;
+  --text-sm: 14px;
+  --text-sm--line-height: 20px;
+  --text-xs: 12px;
+  --text-xs--line-height: 16px;
+
+  /* Radius */
+  --radius-pill: 10px;
+  --radius-card: 14px;
+
+  /* Font */
+  --font-sans: var(--font-inter), Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    135deg,
+    var(--color-app-from) 0%,
+    var(--color-app-to) 100%
+  );
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
