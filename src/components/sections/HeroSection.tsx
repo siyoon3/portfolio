@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { defaultProfile } from "@/lib/profile";
+import { withBasePath } from "@/lib/asset";
 
 interface HeroSectionProps {
   title?: string;
@@ -32,7 +33,7 @@ export function HeroSection({
             variant="primary"
             icon={
               <Image
-                src="/assets/icons/icon-mail.svg"
+                src={withBasePath("/assets/icons/icon-mail.svg")}
                 width={16}
                 height={16}
                 alt=""
@@ -49,7 +50,7 @@ export function HeroSection({
             variant="outline"
             icon={
               <Image
-                src="/assets/icons/icon-github.svg"
+                src={withBasePath("/assets/icons/icon-github.svg")}
                 width={16}
                 height={16}
                 alt=""
@@ -66,7 +67,7 @@ export function HeroSection({
             variant="outline"
             icon={
               <Image
-                src="/assets/icons/icon-linkedin.svg"
+                src={withBasePath("/assets/icons/icon-linkedin.svg")}
                 width={16}
                 height={16}
                 alt=""
@@ -79,7 +80,7 @@ export function HeroSection({
         </div>
       </div>
       <Image
-        src="/assets/icons/icon-chevron-down.svg"
+        src={withBasePath("/assets/icons/icon-chevron-down.svg")}
         width={24}
         height={24}
         alt=""

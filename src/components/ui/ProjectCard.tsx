@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { TechBadge } from "@/components/ui/TechBadge";
 import type { Project } from "@/lib/profile";
+import { withBasePath } from "@/lib/asset";
 
 interface ProjectCardProps {
   project: Project;
@@ -14,7 +15,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       <div className="relative aspect-[16/9]">
         {project.image ? (
           <Image
-            src={project.image}
+            src={withBasePath(project.image)}
             alt={project.title}
             fill
             sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
@@ -27,7 +28,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <div className="absolute inset-0 grid place-items-center bg-black/60">
             <div className="inline-flex items-center gap-2 rounded-pill bg-white/90 px-4 py-2">
               <Image
-                src="/assets/icons/icon-lock.svg"
+                src={withBasePath("/assets/icons/icon-lock.svg")}
                 width={16}
                 height={16}
                 alt=""

@@ -82,19 +82,22 @@ export const defaultProfile: ProfileData = {
     ],
     Language: [
       { name: "JavaScript", level: 85 },
-      { name: "TypeScript", level: 80 },
+      { name: "TypeScript", level: 85 },
     ],
-    Framework: [{ name: "React", level: 80 }],
+    Framework: [
+      { name: "React", level: 85 },
+      { name: "Next.js", level: 80 },
+    ],
     "Design Tool": [
       { name: "Figma", level: 85 },
       { name: "Photoshop", level: 75 },
     ],
-    "Version Control": [{ name: "Git", level: 80 }],
+    "Version Control": [{ name: "Git", level: 85 }],
   },
 
   careers: [
     {
-      company: "회사명",
+      company: "이브레인소프트",
       role: "퍼블리셔",
       period: "2019.12 ~ 현재",
       highlights: [
