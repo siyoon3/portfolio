@@ -1,22 +1,15 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/Button";
 import { defaultProfile } from "@/lib/profile";
 import { withBasePath } from "@/lib/asset";
 
 interface HeroSectionProps {
   title?: string;
   tagline?: string;
-  email?: string;
-  githubUrl?: string;
-  linkedinUrl?: string;
 }
 
 export function HeroSection({
   title = defaultProfile.title,
   tagline = defaultProfile.tagline,
-  email = defaultProfile.email,
-  githubUrl = defaultProfile.links.github,
-  linkedinUrl = defaultProfile.links.linkedin,
 }: HeroSectionProps = {}) {
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center px-6 py-20 text-center">
@@ -27,57 +20,6 @@ export function HeroSection({
         <p className="max-w-xl text-xl text-text-secondary md:text-2xl">
           {tagline}
         </p>
-        <div className="mt-2 flex flex-col gap-4 sm:flex-row">
-          <Button
-            href={`mailto:${email}`}
-            variant="primary"
-            icon={
-              <Image
-                src={withBasePath("/assets/icons/icon-mail.svg")}
-                width={16}
-                height={16}
-                alt=""
-                aria-hidden="true"
-              />
-            }
-          >
-            Contact Me
-          </Button>
-          <Button
-            href={githubUrl}
-            target="_blank"
-            rel="noreferrer noopener"
-            variant="outline"
-            icon={
-              <Image
-                src={withBasePath("/assets/icons/icon-github.svg")}
-                width={16}
-                height={16}
-                alt=""
-                aria-hidden="true"
-              />
-            }
-          >
-            GitHub
-          </Button>
-          <Button
-            href={linkedinUrl}
-            target="_blank"
-            rel="noreferrer noopener"
-            variant="outline"
-            icon={
-              <Image
-                src={withBasePath("/assets/icons/icon-linkedin.svg")}
-                width={16}
-                height={16}
-                alt=""
-                aria-hidden="true"
-              />
-            }
-          >
-            LinkedIn
-          </Button>
-        </div>
       </div>
       <Image
         src={withBasePath("/assets/icons/icon-chevron-down.svg")}
