@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Portfolio — Frontend Publisher</title>
+        <title>Siyoon Portfolio</title>
         <meta
           name="description"
           content="웹표준과 접근성을 지키는 마크업 엔지니어 포트폴리오"
