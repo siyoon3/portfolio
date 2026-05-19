@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { Container } from "@/components/ui/Container";
 import { defaultProfile } from "@/lib/profile";
 import type { Skill } from "@/lib/profile";
@@ -10,9 +11,40 @@ export function SkillsSection({
   skills = defaultProfile.skills,
 }: SkillsSectionProps = {}) {
   const entries = Object.entries(skills);
+  const sectionRef = useRef<HTMLElement>(null);
+  const [animated, setAnimated] = useState(false);
+
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setAnimated(true);
+      return;
+    }
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            setAnimated(true);
+            io.disconnect();
+            break;
+          }
+        }
+      },
+      { threshold: 0.2 },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
 
   return (
-    <section id="skills" className="bg-white px-6 py-20">
+    <section
+      id="skills"
+      ref={sectionRef}
+      className="bg-white px-6 py-20"
+    >
       <Container>
         <h2 className="mb-12 text-center text-3xl font-bold text-foreground">
           Skills
@@ -24,7 +56,7 @@ export function SkillsSection({
                 {category}
               </h3>
               <ul className="space-y-3">
-                {items.map((skill) => (
+                {items.map((skill, idx) => (
                   <li
                     key={skill.name}
                     className="rounded-pill bg-white p-4 shadow-sm"
@@ -46,8 +78,11 @@ export function SkillsSection({
                       aria-label={`${skill.name} 숙련도`}
                     >
                       <div
-                        className="h-full rounded-full bg-gradient-to-r from-brand-blue to-brand-purple"
-                        style={{ width: `${skill.level}%` }}
+                        className="h-full rounded-full bg-gradient-to-r from-brand-blue to-brand-purple transition-[width] duration-1000 ease-out motion-reduce:transition-none"
+                        style={{
+                          width: animated ? `${skill.level}%` : "0%",
+                          transitionDelay: `${idx * 120}ms`,
+                        }}
                       />
                     </div>
                   </li>
