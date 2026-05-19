@@ -4,7 +4,6 @@ import { AboutSection } from "@/components/sections/AboutSection";
 import { SkillsSection } from "@/components/sections/SkillsSection";
 import { CareerSection } from "@/components/sections/CareerSection";
 import { ProjectsSection } from "@/components/sections/ProjectsSection";
-import { CtaSection } from "@/components/sections/CtaSection";
 import { SiteFooter } from "@/components/sections/SiteFooter";
 
 export default function Home() {
@@ -23,7 +22,6 @@ export default function Home() {
         <SkillsSection />
         <CareerSection />
         <ProjectsSection />
-        <CtaSection />
       </main>
       <SiteFooter />
     </>
