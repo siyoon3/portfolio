@@ -59,8 +59,8 @@ export const defaultProfile: ProfileData = {
 
   name: "Kim Siyoon",
   position: "퍼블리셔 / 마크업 엔지니어",
-  experience: "2019.12 ~ 현재 (만 6년)",
-  location: "근무 형태 미정",
+  experience: "2019.12 ~ 현재",
+  location: "정규직",
   email: "siyoon1522@gmail.com",
   links: {
     github: "https://github.com",
