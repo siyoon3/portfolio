@@ -228,6 +228,15 @@ export const defaultProfile: ProfileData = {
       isPrivate: true,
     },
     {
+      title: "이브레인소프트 홈페이지",
+      client: "이브레인소프트",
+      period: "2024.09",
+      techs: ["HTML", "SCSS", "React", "Next.js"],
+      contribution: 100,
+      href: "https://ebrainsoft.com/",
+      image: "/assets/images/projects/ebrainsoft.png",
+    },
+    {
       title: "지역본부 홈페이지 통합",
       client: "세이브더칠드런",
       description: "기존 지역본부 사이트 서비스 종료 및 통합 마이그레이션",
