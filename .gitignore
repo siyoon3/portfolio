@@ -54,3 +54,7 @@ next-env.d.ts
 
 # MCP config (contains API keys)
 .mcp.json
+
+# Claude Code local config (keep on disk, hide from git)
+.claude/
+CLAUDE.md
