@@ -54,8 +54,9 @@ export interface ProfileData {
 }
 
 export const defaultProfile: ProfileData = {
-  title: "Web Publisher",
-  tagline: "웹표준과 접근성을 지키는 웹 퍼블리셔",
+  title: "SIYOON\nWEB PORTFOLIO",
+  tagline:
+    "안녕하세요! 제 포트폴리오 사이트에 방문해주셔서 감사합니다.\n웹 퍼블리셔로 일하며 프론트엔드까지 영역을 넓혀가는 시윤입니다 :)",
 
   name: "Kim Siyoon",
   position: "웹 퍼블리셔",

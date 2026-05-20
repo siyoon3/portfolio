@@ -14,10 +14,10 @@ export function HeroSection({
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center px-6 py-20 text-center">
       <div className="mx-auto flex max-w-[1280px] flex-col items-center gap-8">
-        <h1 className="bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text text-5xl font-bold tracking-tight text-transparent md:text-display-2xl">
+        <h1 className="whitespace-pre-line bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text text-5xl font-bold leading-tight tracking-tight text-transparent md:text-display-2xl">
           {title}
         </h1>
-        <p className="max-w-xl text-xl text-text-secondary md:text-2xl">
+        <p className="w-full whitespace-pre-line break-keep text-xl text-text-secondary md:text-2xl">
           {tagline}
         </p>
       </div>
