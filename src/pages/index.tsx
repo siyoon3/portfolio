@@ -9,7 +9,7 @@ import { SiteFooter } from "@/components/sections/SiteFooter";
 const SITE_URL = "https://siyoon3.github.io/portfolio/";
 const SITE_TITLE = "Kim Siyoon | Web Publisher 포트폴리오";
 const SITE_DESCRIPTION =
-  "웹표준과 접근성을 지키는 마크업 엔지니어 김시윤의 포트폴리오. HTML, CSS, JavaScript, React, Next.js 기반 작업 사례.";
+  "웹표준과 접근성을 지키는 웹 퍼블리셔 김시윤의 포트폴리오. HTML, CSS, JavaScript, React, Next.js 기반 작업 사례.";
 const OG_IMAGE = "https://siyoon3.github.io/portfolio/og-image.png";
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
         <meta name="description" content={SITE_DESCRIPTION} />
         <meta
           name="keywords"
-          content="포트폴리오, 웹 퍼블리셔, 마크업 엔지니어, 프론트엔드, HTML, CSS, JavaScript, React, Next.js, 김시윤"
+          content="포트폴리오, 웹 퍼블리셔, 프론트엔드, HTML, CSS, JavaScript, React, Next.js, 김시윤"
         />
         <meta name="author" content="Kim Siyoon" />
 

@@ -55,10 +55,10 @@ export interface ProfileData {
 
 export const defaultProfile: ProfileData = {
   title: "Web Publisher",
-  tagline: "웹표준과 접근성을 지키는 마크업 엔지니어",
+  tagline: "웹표준과 접근성을 지키는 웹 퍼블리셔",
 
   name: "Kim Siyoon",
-  position: "퍼블리셔 / 마크업 엔지니어",
+  position: "웹 퍼블리셔",
   experience: "2019.12 ~ 현재",
   location: "정규직",
   email: "siyoon1522@gmail.com",
@@ -70,8 +70,8 @@ export const defaultProfile: ProfileData = {
       "https://fearless-text-0b3.notion.site/33c7332e96d8800db49ff0573704b86e?v=33c7332e96d8803cb8c3000cc003d249",
   },
   introLines: [
-    "퍼블리셔로 근무하며 기획자·디자이너·개발자 등 다양한 직군과 협업해왔습니다. 각자 중요하게 보는 방향이 다른 만큼, 제 의견만 고집하기보다 상대방의 의도와 목적을 먼저 이해한 뒤 사용자 화면과 경험에 자연스럽게 녹여내려 노력합니다.",
-    "수정 요청이 반복되거나 일정이 촉박한 상황에서도 끝까지 결과물을 완성하는 책임감을 중요하게 생각합니다. 퍼블리싱은 단순한 화면 구현이 아니라 협업을 통해 프로젝트 완성도를 높여가는 과정이라 믿으며, 사용성과 협업 모두를 고려하며 안정적으로 결과물을 완성하는 퍼블리셔가 되고 싶습니다.",
+    "웹 퍼블리셔로 근무하며 기획자·디자이너·개발자 등 다양한 직군과 협업해왔습니다. 각자 중요하게 보는 방향이 다른 만큼, 제 의견만 고집하기보다 상대방의 의도와 목적을 먼저 이해한 뒤 사용자 화면과 경험에 자연스럽게 녹여내려 노력합니다.",
+    "수정 요청이 반복되거나 일정이 촉박한 상황에서도 끝까지 결과물을 완성하는 책임감을 중요하게 생각합니다. 퍼블리싱은 단순한 화면 구현이 아니라 협업을 통해 프로젝트 완성도를 높여가는 과정이라 믿으며, 사용성과 협업 모두를 고려하며 안정적으로 결과물을 완성하는 웹 퍼블리셔가 되고 싶습니다.",
   ],
 
   skills: {
@@ -98,7 +98,7 @@ export const defaultProfile: ProfileData = {
   careers: [
     {
       company: "이브레인소프트",
-      role: "퍼블리셔",
+      role: "웹 퍼블리셔",
       period: "2019.12 ~ 현재",
       highlights: [
         "웹표준 기반 퍼블리싱",
