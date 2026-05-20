@@ -33,6 +33,11 @@ export function CareerSection({
               <h3 className="mt-2 text-2xl font-bold text-foreground">
                 {entry.company}
               </h3>
+              {entry.summary && (
+                <p className="mt-2 text-base text-text-secondary">
+                  {entry.summary}
+                </p>
+              )}
               <ul className="mt-4 space-y-2">
                 {entry.highlights.map((h, j) => (
                   <li

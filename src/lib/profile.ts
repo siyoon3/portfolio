@@ -14,6 +14,7 @@ export interface CareerEntry {
   company: string;
   role: string;
   period: string;
+  summary?: string;
   highlights: string[];
 }
 
@@ -101,10 +102,15 @@ export const defaultProfile: ProfileData = {
       company: "이브레인소프트",
       role: "웹 퍼블리셔",
       period: "2019.12 ~ 현재",
+      summary: "웹사이트 및 서비스 화면 퍼블리싱 업무 수행",
       highlights: [
-        "웹표준 기반 퍼블리싱",
-        "반응형 웹 구현 (모바일/태블릿/데스크톱)",
+        "HTML, CSS, JavaScript 기반 웹 퍼블리싱 및 UI 구현",
+        "React/TypeScript 기반 컴포넌트 작업 및 화면 유지보수",
         "디자인 시안(Figma/PSD)을 코드로 변환",
+        "반응형 웹 구현 및 크로스브라우징 대응",
+        "기획/디자인 요구사항에 따른 UI 수정 및 기능 개선",
+        "기획자·디자이너·개발자와 커뮤니케이션하며 화면 구현",
+        "Git을 활용한 형상관리 및 협업",
       ],
     },
   ],
