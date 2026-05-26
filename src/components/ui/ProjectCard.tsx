@@ -12,7 +12,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
   const isLinkable = Boolean(project.href) && !project.isPrivate;
 
   const cardClassName = [
-    "group relative flex flex-col overflow-hidden rounded-card bg-white shadow-md transition",
+    "group relative flex h-full flex-col overflow-hidden rounded-card bg-white shadow-md transition",
     isLinkable
       ? "hover:-translate-y-1 hover:shadow-lg focus-within:-translate-y-1 focus-within:shadow-lg"
       : "",
